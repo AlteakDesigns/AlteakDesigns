@@ -7,7 +7,7 @@
     <title>Alteak Designs</title>
     <link rel="stylesheet" href="alteak.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- lo busque en google para saber cómo poner iconos de redes sociales -->
+ 
 
 </head>
 
@@ -21,6 +21,7 @@
             <ul class="menu" id="menu">
                 <li><a href="#" onclick="mostrarSeccion('acerca')">Acerca de mí</a></li>
                 <li><a href="#" onclick="mostrarSeccion('cv')">Perfil profesional</a></li>
+                <li><a href="#" onclick="mostrarSeccion('portafolio')">Portafolio Flipbook</a></li>
                 <li><a href="#" onclick="mostrarSeccion('proyectos')">Mis proyectos</a></li>
                 <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
             </ul>
@@ -32,7 +33,7 @@
 
             <!-- botonsito cuando sea responsive -->
             <div class="hamburger" onclick="desplegarMenu()">
-                ☰ <!-- lo de hamburger lo busque en google para saber cómo hacerlo -->
+                ☰ 
             </div>
         </nav>
     </header>
@@ -45,8 +46,7 @@
         <div class="contenedor-bienvenida">
             <div class="logo-orbita-container">
                 <div class="logo-3d">
-                    <!-- capas pa simular grosor 3D ( lo hice asi porque intente meter el modelo 3d de mi logo 
-                     y fail total asi que busque y me salio esta opcion), mejor algo que nada :) -->
+                    <!-- capas pa simular grosor 3D  -->
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: 0px">
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: -1px; filter: brightness(0.9);">
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: -2px; filter: brightness(0.9);">
@@ -100,7 +100,7 @@
                     <img src="img/nicolle.png" alt="">
                     <!-- div abajo botnes para redes sociales-->
                     <div class="redes-sociales">
-                        <a href="https://www.linkedin.com/in/nicolle-lesmes/" target="_blank" class="btn-social">
+                        <a href="https://www.linkedin.com/in/nicolle-lesmes" target="_blank" class="btn-social">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://www.instagram.com/alteak_designs_/" target="_blank" class="btn-social">
@@ -112,7 +112,8 @@
                         <a href="mailto:alteakdesigns@gmail.com" target="_blank" class="btn-social">
                             <i class="fas fa-envelope"></i>
                         </a>
-                    </div>
+ 
+                    </div>    
                 </div>
             </div>
 
@@ -187,17 +188,14 @@
                             mediante modelado e impresión 3D.</p>
                         <br>
                         <h4>Parfums Christian Dior Iberia | Colaboradora  (Septiembre 2024 - Mayo 2025)</h4>
-                        <p>Proyecto Colaborativo UDIT | Diseño integral de Dior's Essence, una experiencia corporativa inmersiva 
-                            concebida para fortalecer el employer branding de la marca. El proyecto incluyó el desarrollo 
-                            de packaging ecosostenible de lujo en cartón, textil y rafia reciclados, logrando un equilibrio 
-                            entre estética premium y responsabilidad ambiental. Asimismo, se realizó un diseño estructural a 
-                            medida con compartimentación de alta precisión, orientado a obsequios corporativos y comunicación 
-                            de marca personalizada.</p>
+                        <p>Proyecto Colaborativo UDIT | Diseño integral de Dior's Embrace, una experiencia corporativa inmersiva 
+                            concebida para fortalecer el employer branding de la marca. El proyecto incluyó el desarrollo de un regalo 
+                            corporativo «Dior’s Embrace» de lujo sostenible y circular, equilibrando estética de alta gama de Dior
+                            con la responsabilidad medioambiental.</p>
                         <br>
                         <h4>Old Jeffrey | Práctica (Octubre 2023 - Junio 2024)</h4>
-                        <p>Encargada de la conceptualización y desarrollo de una amplia gama de productos para la marca,
-                            reflejando su identidad. Estando presente en todas las etapas del proceso, desde el diseño
-                            hasta su comercialización.</p>
+                        <p>Lideré el desarrollo integral del diseño 3D y estructural de una nueva linea de perfumería masculina. 
+                            Tambien gestioné el proceso integral de diseño de estampados textiles exclusivos para la colección de baño 2025 OJ Napoli.</p>
                         <br>
                          <h4>Quimbaya by Edwin Rodriguez | Colaboradora  (Septiembre 2023 - Mayo 2024)</h4>
                         <p>Colaborativo UDIT | Conceptualización y desarrollo de Girallia, botellero colgante giratorio para barras de coctelería 
@@ -234,8 +232,19 @@
     </div>
 
 
-
-
+ <!--titulo de portafolio flipbook-->
+<div id="portafolio" class="seccion animado">
+    <h1 class="titulo-perfil">Portafolio Flipbook Español</h1>
+    <div class="portafolio_flipbook_español">
+        <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/6350cde2d4.html"></iframe>
+    </div>
+    <h1 class="titulo-perfil">Portfolio Flipbook English</h1>
+    <div class="portfolio_flipbook_english">
+        <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 1px solid lightgray; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/3b4d5a11d8.html"></iframe>
+    </div> 
+    
+</div>
+    
 
 
 
@@ -249,6 +258,17 @@
         </div>
 
         <div id="galeria" class="contenedor-galeria">
+            
+            <!-- proyecto 0:AMMA -->
+            <a href="#" class="proyecto" onclick="verProyecto('amma')">
+                <img src="img/amma.jpeg" alt="">
+                <!-- al pasar mouse -->
+                <div class="info-overlay">
+                    <h3>AMMA</h3>
+                    <p> Lifestyle Goods, Diseño Circular & Modular - Ideation & Workflows, 2026</p>
+                </div>
+            </a>
+            
             <!-- proyecto 1: ONDARA -->
             <a href="#" class="proyecto" onclick="verProyecto('ondara')">
                 <img src="img/ondara.jpg" alt="">
@@ -340,6 +360,63 @@
 
     <!-- pag de c/proyecto al hacer click en la foto  -->
 
+ <!-- proyecto 0: amma -->
+    <div id="amma" class="seccion">
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
+
+        <div class="titulo-amma">
+            <h1>AMMA</h1>
+            <h2 class="subtitulo">Familia en Movimiento</h2>
+        </div>
+
+        <div class="cuadricula-proyecto">
+            <!-- primera seccion fotos con txto -->
+            <div class="bloque-sup-amma">
+                <div class="cuadricula-fotos-modelo">
+                    <img src="img/amma1.png" alt="">
+                    <img src="img/amma2.png" alt="">
+                    <img src="img/amma3.png" alt="">
+                    <img src="img/amma4.png" alt="">
+                </div>
+                <div class="texto-descripcion">
+                    <p>
+                        Opera como una startup de puericultura que nace para acabar con la obsolescencia biológica 
+                        de los productos infantiles. La industria actual obliga a los compradores a adquirir artículos
+                        que quedan inservibles en pocos meses debido al crecimiento del bebé. La propuesta de valor de
+                        AMMA resuelve esto con un sistema de 3 fases evolutivas (porteo, mochila infantil y bolso de 
+                        adulto con crossbody desplegable).
+                        <br><br>
+                        .
+                        <br><br>
+                        Is a childcare startup designed to eliminate the biological obsolescence of baby gear. 
+                        While the current market forces parents to buy products that are outgrown in months, 
+                        AMMA solves this with a 3-phase evolutionary system, seamlessly transforming from a baby 
+                        carrier into a children’s backpack, and finally into an adult bag with a deployable crossbody.
+                    </p>
+                </div>
+            </div>
+
+            <!-- segunda seccion fotos otras -->
+            <div class="bloque-medio">
+                <img src="img/amma5.jpeg" alt="">
+                <img src="img/amma6.jpeg" alt="">
+                <img src="img/amma7.jpeg" alt="">
+                <img src="img/amma8.jpeg" alt="">
+            </div>
+
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
+
+            <!-- zoom de las imgs -->
+        <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+            <span class="cerrar-visor">×</span>
+            <img id="img-visor" src="" alt="Imagen Completa">
+        </div>
+            
+    
     <!-- proyecto 1: ondara -->
     <div id="ondara" class="seccion">
         <div class="detalle-nav">
@@ -389,8 +466,15 @@
                 </div>
             </div>
         </div>
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
     </div>
-
+    <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+    </div>
 
 
 
@@ -444,9 +528,22 @@
             <div class="bloque-inferior">
                 <img src="img/naya9.png" alt="" class="img-full">
             </div>
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
+                <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
     </div>
+        </div>
 
+    </div>
+    <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+    </div>
 
 
 
@@ -499,10 +596,21 @@
                     <div class="play-icon">▶</div>
                 </div>
             </div>
-
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
+            <!-- zoom de las imgs -->
+        <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+            <span class="cerrar-visor">×</span>
+            <img id="img-visor" src="" alt="Imagen Completa">
+        </div>
         </div>
     </div>
-
+    <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+    </div>
 
 
 
@@ -566,9 +674,18 @@
                     <img src="img/oj10.jpg" alt="">
                 </div>
             </div>
+
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
+
         </div>
     </div>
-
+        <!-- zoom de las imgs -->
+        <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+            <span class="cerrar-visor">×</span>
+            <img id="img-visor" src="" alt="Imagen Completa">
+        </div>
 
 
 
@@ -626,10 +743,18 @@
                 <img src="img/soleris3.jpg" alt="">
                 <img src="img/soleris4.jpeg" alt="">
             </div>
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
+        </div>
+
     </div>
 
-
+        <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+    </div>
 
 
 
@@ -685,10 +810,17 @@
                     <div class="play-icon"> ▶ </div>
                 </div>
             </div>
-
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
-    </div>
+        </div>
 
+    </div>
+        <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+    </div>
 
 
 
@@ -752,8 +884,16 @@
 
 
             </div>
-
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
+        </div>
+
+    </div>
+        <!-- zoom de las imgs -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
+        <span class="cerrar-visor">×</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
     </div>
 
 
@@ -812,7 +952,9 @@
                 <img src="img/zen6.png" alt="">
                 <img src="img/zen7.png" alt="">
             </div>
-
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
         </div>
     </div>
 
