@@ -652,35 +652,37 @@
     margin-bottom: 40px;
 }
 
-/* Bloque 1: Cuadrícula izq, texto der */
+/* Bloque 1: Cuadrícula izq (50%), texto der (50%) */
 .amma-sup {
     display: flex;
-    gap: 30px;
-    margin-bottom: 50px;
-    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: flex-start;
 }
 .amma-sup-imgs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     width: 50%;
+}
+.amma-sup-imgs img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .amma-descripcion {
     width: 50%;
 }
 
-/* Bloque 2: Texto izq, imagen der */
+/* Bloque 2: Texto izq (50%), Imagen grande der (50%) */
 .amma-medio {
     display: flex;
-    gap: 30px;
-    margin-bottom: 50px;
-    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    align-items: center; /* Alineado al centro verticalmente según el esquema */
 }
 .amma-medio-texto {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 .amma-medio-img {
     width: 50%;
@@ -688,30 +690,33 @@
 .amma-medio-img img {
     width: 100%;
     height: auto;
+    display: block;
 }
 
 /* Bloque 3: Galería 3x2 */
 .amma-galeria-inferior {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 40px;
 }
 .amma-galeria-inferior img {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 4 / 3; /* Asegura uniformidad en la cuadrícula */
     object-fit: cover;
+    display: block;
 }
 
-/* Bloque 4: Texto h4 gris y chiquito */
+/* Bloque 4: Footer h4 gris pequeño y centrado */
 .amma-footer {
     text-align: center;
-    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .texto-h4-pequeno {
     color: #888888;
     font-size: 0.8rem;
     font-weight: normal;
+    margin: 0;
 }
 
 /* Interacción de Zoom */
@@ -720,7 +725,7 @@
     transition: transform 0.2s ease-in-out;
 }
 .img-zoom:hover {
-    transform: scale(1.02); /* Pequeño efecto visual al pasar el ratón */
+    transform: scale(1.02);
 }
 
 
