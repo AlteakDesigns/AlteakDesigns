@@ -376,10 +376,10 @@
         <!-- Bloque 1: Cuadrícula izq, texto der -->
         <div class="amma-sup">
             <div class="amma-sup-imgs">
-                <img src="img/amma1.png" alt="">
-                <img src="img/amma2.png" alt="">
-                <img src="img/amma3.png" alt="">
-                <img src="img/amma4.png" alt="">
+                <img src="img/amma1.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/amma2.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/amma3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/amma4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
             </div>
             <div class="amma-descripcion">
                 <p>
@@ -399,11 +399,8 @@
             </div>
         </div>
 
-        <!-- Bloque 2: amma11 izq, textos 2 y 3 der -->
+        <!-- Bloque 2: Texto izq, amma11 der -->
         <div class="amma-medio">
-            <div class="amma-medio-img">
-                <img src="img/amma11.png" alt="">
-            </div>
             <div class="amma-medio-texto">
                 <p>
                     AMMA da respuesta a la ineficiente movilidad en la crianza, causante de estrés crónico, sobrecostes familiares 
@@ -417,21 +414,24 @@
                     versátil y duradera.
                 </p>
             </div>
+            <div class="amma-medio-img">
+                <img src="img/amma11.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            </div>
         </div>
 
-        <!-- Bloque 3: Resto de imágenes izq, h4 inferior der -->
-        <div class="amma-inf">
-            <div class="amma-galeria">
-                <img src="img/amma5.jpeg" alt="">
-                <img src="img/amma6.jpeg" alt="">
-                <img src="img/amma7.jpeg" alt="">
-                <img src="img/amma8.jpeg" alt="">
-                <img src="img/amma9.jpeg" alt="">
-                <img src="img/amma10.png" alt="">
-            </div>
-            <div class="amma-h4-der">
-                <h4>Reinterpretación del boceto original mediante IA (Workflows y herramientas: Gemini - Manus - Vizcom)</h4>
-            </div>
+        <!-- Bloque 3: Galería 3x2 -->
+        <div class="amma-galeria-inferior">
+            <img src="img/amma5.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            <img src="img/amma6.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            <img src="img/amma7.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            <img src="img/amma8.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            <img src="img/amma9.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+            <img src="img/amma10.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+        </div>
+
+        <!-- Bloque 4: H4 inferior -->
+        <div class="amma-footer">
+            <h4 class="texto-h4-pequeno">Reinterpretación del boceto original mediante IA (Workflows y herramientas: Gemini - Manus - Vizcom)</h4>
         </div>
 
     </div>
@@ -446,6 +446,9 @@
         <img id="img-visor" src="" alt="Imagen Completa">
     </div>
 </div>
+
+
+    
     
 <!-- pag de c/proyecto al hacer click en la foto  -->
 
