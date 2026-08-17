@@ -646,62 +646,82 @@
 
 /* 0 proyecto estilos AMMA */
 
-/* Bloque 1 */
+/* Títulos centrados */
+.titulo-amma {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Bloque 1: Cuadrícula izq, texto der */
 .amma-sup {
     display: flex;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
 }
 .amma-sup-imgs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    flex: 1;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px;
+    width: 50%;
 }
 .amma-descripcion {
-    flex: 1;
+    width: 50%;
 }
 
-/* Bloque 2 */
+/* Bloque 2: Texto izq, imagen der */
 .amma-medio {
     display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.amma-medio-texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    margin-bottom: 40px;
 }
 .amma-medio-img {
-    flex: 1;
+    width: 50%;
 }
 .amma-medio-img img {
     width: 100%;
-}
-.amma-medio-texto {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    height: auto;
 }
 
-/* Bloque 3 */
-.amma-inf {
-    display: flex;
-    gap: 20px;
-    align-items: flex-end; /* Empuja el h4 a la esquina inferior */
+/* Bloque 3: Galería 3x2 */
+.amma-galeria-inferior {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 15px;
+    margin-bottom: 40px;
 }
-.amma-galeria {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-.amma-galeria img {
-    width: calc(50% - 5px); /* Ajusta a 2 columnas; cambia el 50% si quieres más/menos columnas */
-}
-.amma-h4-der {
-    flex: 1;
-    text-align: right;
+.amma-galeria-inferior img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
+/* Bloque 4: Texto h4 gris y chiquito */
+.amma-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.texto-h4-pequeno {
+    color: #888888;
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+/* Interacción de Zoom */
+.img-zoom {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+.img-zoom:hover {
+    transform: scale(1.02); /* Pequeño efecto visual al pasar el ratón */
+}
 
 
 
