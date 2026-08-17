@@ -54,7 +54,10 @@ function cerrarFoto() {
     visor.classList.remove('activo');
 }
 
-
+function abrirFoto(src) {
+    document.getElementById("img-visor").src = src;
+    document.getElementById("visor").style.display = "flex";
+}
 
 
 
