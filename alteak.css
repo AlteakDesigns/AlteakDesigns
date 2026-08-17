@@ -652,55 +652,64 @@
     margin-bottom: 40px;
 }
 
-/* Forzamos que sea una fila y no se apile */
+/* Forzamos que sea una fila y use align-items: stretch para igualar alturas */
 .amma-sup {
     display: flex !important;
     flex-direction: row !important; 
     flex-wrap: nowrap !important;
     gap: 40px;
     margin-bottom: 60px;
-    align-items: flex-start;
+    align-items: stretch !important; /* Clave para el centrado vertical del texto */
     width: 100%;
 }
 
-/* Forzamos la cuadrícula 2x2 */
+/* Aumentamos el ancho al 60% para que sean más grandes */
 .amma-sup-imgs {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 15px !important;
-    width: 50% !important;
+    width: 60% !important; 
 }
 
 .amma-sup-imgs img {
     width: 100% !important;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* Forzamos el ancho del texto */
+/* Reducimos el ancho al 40% y centramos en ambos ejes */
 .amma-descripcion {
-    width: 50% !important;
+    width: 40% !important;
     display: flex;
     flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center;     /* Centrado horizontal flex */
+    text-align: center;      /* Centrado del texto */
 }
 
-/* Bloque 2: Texto izq (50%), Imagen grande der (50%) */
+/* Aplicamos la misma lógica de proporciones y centrado al bloque 2 */
 .amma-medio {
     display: flex;
     gap: 40px;
     margin-bottom: 60px;
-    align-items: center;
+    align-items: stretch;
 }
 .amma-medio-texto {
-    width: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .amma-medio-img {
-    width: 50%;
+    width: 60%;
 }
 .amma-medio-img img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
@@ -739,9 +748,9 @@
     transform: scale(1.02);
 }
 
-/* Estilos base del visor (si no los tenías) */
+/* Estilos base del visor */
 .visor-imagen {
-    display: none; /* Oculto por defecto */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
@@ -769,7 +778,6 @@
 
 /* RESPONSIVE MÓVIL */
 @media (max-width: 768px) {
-    /* Apila el bloque superior (fotos arriba, texto abajo) */
     .amma-sup {
         flex-direction: column !important;
         gap: 20px;
@@ -781,8 +789,6 @@
     .amma-descripcion {
         width: 100% !important;
     }
-
-    /* Apila el bloque medio (texto arriba, foto grande abajo) */
     .amma-medio {
         flex-direction: column !important;
         gap: 20px;
@@ -794,8 +800,6 @@
     .amma-medio-img {
         width: 100%;
     }
-
-    /* Pasa la galería de 3 columnas a 2 columnas para que no se vea tan pequeño */
     .amma-galeria-inferior {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -804,7 +808,6 @@
 
 /* RESPONSIVE MÓVIL MUY PEQUEÑO */
 @media (max-width: 480px) {
-    /* Si la pantalla es muy pequeña, las cuadrículas pasan a 1 sola columna */
     .amma-sup-imgs {
         grid-template-columns: 1fr !important;
     }
@@ -812,7 +815,6 @@
         grid-template-columns: 1fr;
     }
 }
-
 
 
 
