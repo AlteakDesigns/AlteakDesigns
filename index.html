@@ -7,17 +7,12 @@
     <title>Alteak Designs</title>
     <link rel="stylesheet" href="alteak.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
- 
-
 </head>
 
 <body>
 
-
     <header class="navbar">
-
         <nav class="navbar-container">
-            <!-- menu -->
             <ul class="menu" id="menu">
                 <li><a href="#" onclick="mostrarSeccion('acerca')">Acerca de mí</a></li>
                 <li><a href="#" onclick="mostrarSeccion('cv')">Perfil profesional</a></li>
@@ -26,27 +21,21 @@
                 <li><a href="#" onclick="mostrarSeccion('contacto')">Contacto</a></li>
             </ul>
 
-            <!-- logo -->
             <div class="logo" onclick="mostrarSeccion('bienvenida')" style="cursor: pointer;">
                 <img src="img/logo_2.svg" alt="Alteak Designs">
             </div>
 
-            <!-- botonsito cuando sea responsive -->
             <div class="hamburger" onclick="desplegarMenu()">
                 ☰ 
             </div>
         </nav>
     </header>
 
-
-
-
     <!-- seccion bienvenida -->
     <div id="bienvenida" class="seccion activa">
         <div class="contenedor-bienvenida">
             <div class="logo-orbita-container">
                 <div class="logo-3d">
-                    <!-- capas pa simular grosor 3D  -->
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: 0px">
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: -1px; filter: brightness(0.9);">
                     <img src="img/logo_2.svg" class="logo-layer" style="--z: -2px; filter: brightness(0.9);">
@@ -61,17 +50,14 @@
         </div>
     </div>
 
-
-    <!-- seccion acerca de mim -->
+    <!-- seccion acerca de mi -->
     <div id="acerca" class="seccion">
         <div class="contenedor-acerca">
-            <!-- div superior con mi nombre y profesion-->
             <div class="acerca-sup animado">
                 <h1>¡Hola! Soy Nicolle Lesmes</h1>
                 <h2 class="subtitulo-acerca">Diseñadora de Producto</h2>
             </div>
 
-            <!-- div medio: con texto de mi y mi pp -->
             <div class="acerca-medio animado">
                 <div class="texto-acerca">
                     <p>
@@ -83,9 +69,7 @@
                         resolutiva, en constante aprendizaje. Busco detectar tendencias, experimentar con nuevas formas
                         de crear y adaptarme a los retos del diseño contemporáneo, aportando siempre una mirada fresca,
                         creativa y consistente.
-                        <br>
-                        <br>.<br>
-                        <br>
+                        <br><br>.<br><br>
                         Passionate about transforming ideas into feasible and functional objects, my work explores the
                         balance between aesthetics and use. I believe in design with intention, one that goes beyond the
                         obvious to bring meaning, sensitivity, and coherence to each project. The creative process is
@@ -97,8 +81,7 @@
                     </p>
                 </div>
                 <div class="imagen-yo">
-                    <img src="img/nicolle.png" alt="">
-                    <!-- div abajo botnes para redes sociales-->
+                    <img src="img/nicolle.png" alt="Nicolle Lesmes">
                     <div class="redes-sociales">
                         <a href="https://www.linkedin.com/in/nicolle-lesmes" target="_blank" class="btn-social">
                             <i class="fab fa-linkedin-in"></i>
@@ -112,24 +95,16 @@
                         <a href="mailto:alteakdesigns@gmail.com" target="_blank" class="btn-social">
                             <i class="fas fa-envelope"></i>
                         </a>
- 
                     </div>    
                 </div>
             </div>
-
-
         </div>
     </div>
 
-
-
-
-
-        <!-- seccion pp -->
+    <!-- seccion cv -->
     <div id="cv" class="seccion animado">
         <h1 class="titulo-perfil">Perfil Profesional</h1>
         <div class="contenedor-cv">
-            <!-- columna izq -->
             <div class="columna-izq">
                 <div class="bloque-cv">
                     <h3>Información Personal</h3>
@@ -176,7 +151,6 @@
                 </div>
             </div>
 
-            <!-- columna der -->
             <div class="columna-der">
                 <div class="bloque-cv">
                     <h3>Experiencia</h3>
@@ -187,7 +161,7 @@
                             componentes metálicos, montaje final de piezas y desarrollo de plantillas y prototipos
                             mediante modelado e impresión 3D.</p>
                         <br>
-                        <h4>Parfums Christian Dior Iberia | Colaboradora  (Septiembre 2024 - Mayo 2025)</h4>
+                        <h4>Parfums Christian Dior Iberia | Colaboradora (Septiembre 2024 - Mayo 2025)</h4>
                         <p>Proyecto Colaborativo UDIT | Diseño integral de Dior's Embrace, una experiencia corporativa inmersiva 
                             concebida para fortalecer el employer branding de la marca. El proyecto incluyó el desarrollo de un regalo 
                             corporativo «Dior’s Embrace» de lujo sostenible y circular, equilibrando estética de alta gama de Dior
@@ -197,7 +171,7 @@
                         <p>Lideré el desarrollo integral del diseño 3D y estructural de una nueva linea de perfumería masculina. 
                             Tambien gestioné el proceso integral de diseño de estampados textiles exclusivos para la colección de baño 2025 OJ Napoli.</p>
                         <br>
-                         <h4>Quimbaya by Edwin Rodriguez | Colaboradora  (Septiembre 2023 - Mayo 2024)</h4>
+                        <h4>Quimbaya by Edwin Rodriguez | Colaboradora (Septiembre 2023 - Mayo 2024)</h4>
                         <p>Colaborativo UDIT | Conceptualización y desarrollo de Girallia, botellero colgante giratorio para barras de coctelería 
                             profesional, optimizando capacidad de almacenaje y ergonomía operativa mediante la fusión de
                             viabilidad técnica y estética premium adaptada a las exigencias de la alta restauración.</p>
@@ -217,39 +191,29 @@
                     <h3>Certificaciones Cursos</h3>
                     <div class="cv">
                         <h4>Business Management Institute of Berlin - Enero 2021, Online</h4>
-                        <p class="detalle-curso">Basics of Innovation Management<br>Certificate ID: 322944-161-127-5324
-                        </p>
+                        <p class="detalle-curso">Basics of Innovation Management<br>Certificate ID: 322944-161-127-5324</p>
                         <br>
                         <h4>Business Management Institute of Berlin - Enero 2021, Online</h4>
-                        <p class="detalle-curso">Leadership and Team Development<br>Certificate ID: 322944-161-222-7803
-                        </p>
+                        <p class="detalle-curso">Leadership and Team Development<br>Certificate ID: 322944-161-222-7803</p>
                     </div>
                 </div>
-
-                
             </div>
         </div>
     </div>
 
-
- <!--titulo de portafolio flipbook-->
-<div id="portafolio" class="seccion animado">
-    <h1 class="titulo-perfil">Portafolio Flipbook Español</h1>
-    <div class="portafolio_flipbook_español">
-        <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 0px; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/6350cde2d4.html"></iframe>
+    <!-- seccion portafolio flipbook -->
+    <div id="portafolio" class="seccion animado">
+        <h1 class="titulo-perfil">Portafolio Flipbook Español</h1>
+        <div class="portafolio_flipbook_español">
+            <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 0px; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/6350cde2d4.html"></iframe>
+        </div>
+        <h1 class="titulo-perfil">Portfolio Flipbook English</h1>
+        <div class="portfolio_flipbook_english">
+            <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 0px; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/3b4d5a11d8.html"></iframe>
+        </div> 
     </div>
-    <h1 class="titulo-perfil">Portfolio Flipbook English</h1>
-    <div class="portfolio_flipbook_english">
-        <iframe allowfullscreen="allowfullscreen" allow="autoplay; fullscreen; clipboard-write" scrolling="no" class="fp-iframe" style="border: 0px; width: 100%; height: 400px;" src="https://heyzine.com/flip-book/3b4d5a11d8.html"></iframe>
-    </div> 
-    
-</div>
-    
 
-
-
-
-    <!--titulo de miss proyectos-->
+    <!-- seccion mis proyectos -->
     <div id="proyectos" class="seccion animado">
         <div class="portada-proyectos">
             <h1>Mis proyectos</h1>
@@ -258,203 +222,160 @@
         </div>
 
         <div id="galeria" class="contenedor-galeria">
-            
-            <!-- proyecto 0:AMMA -->
             <a href="#" class="proyecto" onclick="verProyecto('amma')">
-                <img src="img/amma.jpg" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/amma.jpg" alt="AMMA">
                 <div class="info-overlay">
                     <h3>AMMA</h3>
-                    <p> Lifestyle Goods, Diseño Circular & Modular - Ideation & Workflows, 2026</p>
+                    <p>Lifestyle Goods, Diseño Circular & Modular - Ideation & Workflows, 2026</p>
                 </div>
             </a>
             
-            <!-- proyecto 1: ONDARA -->
             <a href="#" class="proyecto" onclick="verProyecto('ondara')">
-                <img src="img/ondara.jpg" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/ondara.jpg" alt="ONDARA">
                 <div class="info-overlay">
                     <h3>ONDARA</h3>
                     <p>Luminaria Conceptual - Impresión 3D PETG, 2025</p>
                 </div>
             </a>
 
-            <!-- proyecto 2:NAYA -->
             <a href="#" class="proyecto" onclick="verProyecto('naya')">
-                <img src="img/naya.jpeg" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/naya.jpeg" alt="NAYA">
                 <div class="info-overlay">
                     <h3>NAYA</h3>
                     <p>Joyería Conceptual - Impresión Resina 3D, 2025</p>
                 </div>
             </a>
 
-
-            <!-- proyecto 3:DIOR`S EMBRACE-->
             <a href="#" class="proyecto" onclick="verProyecto('dior')">
-                <img src="img/diorlogo.png" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/diorlogo.png" alt="DIOR`S EMBRACE">
                 <div class="info-overlay">
                     <h3>DIOR`S EMBRACE</h3>
-                    <p> Regalo Corporativo - Moda e Identidad de empresa, 2025</p>
+                    <p>Regalo Corporativo - Moda e Identidad de empresa, 2025</p>
                 </div>
             </a>
 
-            <!-- proyecto 4: OJ NAPOLI -->
             <a href="#" class="proyecto" onclick="verProyecto('napoli')">
-                <img src="img/oldjeffrey.png" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/oldjeffrey.png" alt="OJ NAPOLI">
                 <div class="info-overlay">
                     <h3>OJ NAPOLI</h3>
-                    <p> Bermudas para Old Jeffrey - Moda, 2024</p>
+                    <p>Bermudas para Old Jeffrey - Moda, 2024</p>
                 </div>
             </a>
 
-            <!-- proyecto 5: SOLERIS -->
             <a href="#" class="proyecto" onclick="verProyecto('soleris')">
-                <img src="img/solerisportada.jpg" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/solerisportada.jpg" alt="SOLERIS">
                 <div class="info-overlay">
                     <h3>SOLERIS</h3>
                     <p>Luminaria Conceptual - CNC & Rhinoceros, 2025</p>
                 </div>
             </a>
 
-
-            <!-- proyecto 6: GIRALIA  -->
             <a href="#" class="proyecto" onclick="verProyecto('giralia')">
-                <img src="img/giralia logo.png" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/giralia logo.png" alt="GIRALIA">
                 <div class="info-overlay">
                     <h3>GIRALIA</h3>
-                    <p> Hostelería para Quimbaya - Mobiliario Hostelería, 2024</p>
+                    <p>Hostelería para Quimbaya - Mobiliario Hostelería, 2024</p>
                 </div>
             </a>
 
-            <!-- proyecto 7: SINGULAR ESSENCE  -->
             <a href="#" class="proyecto" onclick="verProyecto('singular')">
-                <img src="img/perfumelogo.png" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/perfumelogo.png" alt="SINGULAR ESSENCE">
                 <div class="info-overlay">
                     <h3>SINGULAR ESSENCE</h3>
-                    <p> Perfume Conceptual - Packaging & Branding, 2024</p>
+                    <p>Perfume Conceptual - Packaging & Branding, 2024</p>
                 </div>
             </a>
 
-            <!-- proyecto 8: ZENTIDE  -->
             <a href="#" class="proyecto" onclick="verProyecto('zentide')">
-                <img src="img/zenportada.png" alt="">
-                <!-- al pasar mouse -->
+                <img src="img/zenportada.png" alt="ZENTIDE">
                 <div class="info-overlay">
                     <h3>ZENTIDE</h3>
-                    <p> Proyecto Verallia - Branding & Packaging, 2023</p>
+                    <p>Proyecto Verallia - Branding & Packaging, 2023</p>
                 </div>
             </a>
-
         </div>
     </div>
-    </div>
 
+    <!-- DETALLES DE CADA PROYECTO -->
 
+    <!-- AMMA -->
+    <div id="amma" class="seccion">
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
 
+        <div class="titulo-amma">
+            <h1>AMMA</h1>
+            <h2 class="subtitulo">Familia en Movimiento</h2>
+        </div>
 
-<!-- pag de c/proyecto al hacer click en la foto -->
-
-<!-- proyecto 0: amma -->
-<div id="amma" class="seccion">
-    <div class="detalle-nav">
-        <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
-    </div>
-
-    <!-- Encabezado -->
-    <div class="titulo-amma">
-        <h1>AMMA</h1>
-        <h2 class="subtitulo">Familia en Movimiento</h2>
-    </div>
-
-    <div class="amma-contenido">
-        
-        <!-- Bloque 1: Cuadrícula 2x2 (izq) y Texto (der) -->
-        <div class="amma-sup">
-            <div class="amma-sup-imgs">
-                <img src="img/amma1.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/amma2.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/amma3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/amma4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+        <div class="amma-contenido">
+            <div class="amma-sup">
+                <div class="amma-sup-imgs">
+                    <img src="img/amma1.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/amma2.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/amma3.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/amma4.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                </div>
+                
+                <div class="amma-descripcion">
+                    <p>
+                        Opera como una startup de puericultura que nace para acabar con la obsolescencia biológica 
+                        de los productos infantiles. La industria actual obliga a los compradores a adquirir artículos
+                        que quedan inservibles en pocos meses debido al crecimiento del bebé. La propuesta de valor de
+                        AMMA resuelve esto con un sistema de 3 fases evolutivas (porteo, mochila infantil y bolso de 
+                        adulto con crossbody desplegable).
+                    </p>
+                    <br> . <br><br>
+                    <p>
+                        Is a childcare startup designed to eliminate the biological obsolescence of baby gear. 
+                        While the current market forces parents to buy products that are outgrown in months, 
+                        AMMA solves this with a 3-phase evolutionary system, seamlessly transforming from a baby 
+                        carrier into a children’s backpack, and finally into an adult bag with a deployable crossbody.
+                    </p>
+                </div>
             </div>
-            
-            <div class="amma-descripcion">
-                <p>
-                    Opera como una startup de puericultura que nace para acabar con la obsolescencia biológica 
-                    de los productos infantiles. La industria actual obliga a los compradores a adquirir artículos
-                    que quedan inservibles en pocos meses debido al crecimiento del bebé. La propuesta de valor de
-                    AMMA resuelve esto con un sistema de 3 fases evolutivas (porteo, mochila infantil y bolso de 
-                    adulto con crossbody desplegable).
-                </p>
-                <br> . <br><br>
-                <p>
-                    Is a childcare startup designed to eliminate the biological obsolescence of baby gear. 
-                    While the current market forces parents to buy products that are outgrown in months, 
-                    AMMA solves this with a 3-phase evolutionary system, seamlessly transforming from a baby 
-                    carrier into a children’s backpack, and finally into an adult bag with a deployable crossbody.
-                </p>
+
+            <div class="amma-medio">
+                <div class="amma-medio-texto">
+                    <p>
+                        AMMA da respuesta a la ineficiente movilidad en la crianza, causante de estrés crónico, sobrecostes familiares 
+                        y residuos medioambientales. Respaldado por una sólida investigación que evidenció la pérdida de autonomía y 
+                        agotamiento en la mayoría de los cuidadores, el proyecto recorrió todo el ciclo de diseño: de la conceptualización 
+                        y estrategia al desarrollo de un producto final sostenible, funcional y 100% viable en el mercado.
+                    </p>
+                    <br><br>
+                    <p>
+                        Construido en algodón 100% EtaProof de alta durabilidad y libre de toxinas, garantiza un rendimiento óptimo y seguro 
+                        en todas sus configuraciones. Esta fusión de funcionalidad técnica y diseño consciente convierte a AMMA en una herramienta 
+                        versátil y duradera.
+                    </p>
+                </div>
+                <div class="amma-medio-img">
+                    <img src="img/amma11.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                </div>
+            </div>
+
+            <div class="amma-galeria-inferior">
+                <img src="img/amma5.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/amma6.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/amma7.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/amma8.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/amma9.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/amma10.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+            </div>
+
+            <div class="amma-footer">
+                <h4 class="texto-h4-pequeno">Reinterpretación del boceto original mediante IA (Workflows y herramientas: Gemini - Manus - Vizcom)</h4>
             </div>
         </div>
 
-        <!-- Bloque 2: Texto (izq) e Imagen grande (der) -->
-        <div class="amma-medio">
-            <div class="amma-medio-texto">
-                <p>
-                    AMMA da respuesta a la ineficiente movilidad en la crianza, causante de estrés crónico, sobrecostes familiares 
-                    y residuos medioambientales. Respaldado por una sólida investigación que evidenció la pérdida de autonomía y 
-                    agotamiento en la mayoría de los cuidadores, el proyecto recorrió todo el ciclo de diseño: de la conceptualización 
-                    y estrategia al desarrollo de un producto final sostenible, funcional y 100% viable en el mercado.
-                </p>
-                <br><br>
-                <p>
-                    Construido en algodón 100% EtaProof de alta durabilidad y libre de toxinas, garantiza un rendimiento óptimo y seguro 
-                    en todas sus configuraciones. Esta fusión de funcionalidad técnica y diseño consciente convierte a AMMA en una herramienta 
-                    versátil y duradera.
-                </p>
-            </div>
-            <div class="amma-medio-img">
-                <img src="img/amma11.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            </div>
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
-
-        <!-- Bloque 3: Galería 3x2 inferior -->
-        <div class="amma-galeria-inferior">
-            <img src="img/amma5.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            <img src="img/amma6.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            <img src="img/amma7.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            <img src="img/amma8.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            <img src="img/amma9.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-            <img src="img/amma10.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-        </div>
-
-        <!-- Bloque 4: Footer -->
-        <div class="amma-footer">
-            <h4 class="texto-h4-pequeno">Reinterpretación del boceto original mediante IA (Workflows y herramientas: Gemini - Manus - Vizcom)</h4>
-        </div>
-
     </div>
 
-    <div class="detalle-nav">
-        <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
-    </div>
-
-    <!-- Visor zoom -->
-    <div id="visor" class="visor-imagen" onclick="cerrarFoto()">
-        <span class="cerrar-visor">×</span>
-        <img id="img-visor" src="" alt="Imagen Completa">
-    </div>
-</div>
-
-    
-    
-<!-- pag de c/proyecto al hacer click en la foto  -->
-
-    <!-- proyecto 1: ondara -->
+    <!-- ONDARA -->
     <div id="ondara" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -466,10 +387,9 @@
         </div>
 
         <div class="ondara-contenido">
-            <!-- primera seccion sup con foto y text-->
             <div class="ondara-sup">
                 <div class="ondara-img-principal">
-                    <img src="img/ondara1.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/ondara1.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
                 <div class="ondara-descripcion">
                     <p>
@@ -478,8 +398,7 @@
                         generando un movimiento suave que cambia según el punto de vista y el espacio. El resultado es
                         una pieza donde la geometría y la luz se entienden como un mismo gesto.
                     </p>
-                    <br> . <br>
-                    <br>
+                    <br> . <br><br>
                     <p>
                         It emerges from experimentation with parametric design, moving beyond the traditional spiral to
                         explore a more fluid and controlled language. The waves shape the form and guide the light,
@@ -489,29 +408,25 @@
                 </div>
             </div>
 
-            <!-- cuadricula de imags -->
             <div class="ondara-galeria">
-                <img src="img/ondara2.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/ondara 3.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/ondara4.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/ondara5.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/ondara2.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/ondara 3.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/ondara4.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/ondara5.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
 
-                <!-- video proceso rhino -->
                 <div class="ondara-video" onclick="reproducirVideo(this)">
                     <video src="videos/ondaravideo.mp4" style="width: 100%; height: 100%; object-fit: cover;"></video>
                     <div class="play-icon"> ▶ </div>
                 </div>
             </div>
         </div>
+        
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
     </div>
 
-
-
-
-
-
-
-    <!-- proyecto 2: naya -->
+    <!-- NAYA -->
     <div id="naya" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -523,22 +438,19 @@
         </div>
 
         <div class="cuadricula-proyecto">
-            <!-- primera seccion fotos con txto -->
             <div class="bloque-sup-naya">
                 <div class="cuadricula-fotos-modelo">
-                    <img src="img/naya1.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                    <img src="img/naya2.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                    <img src="img/naya3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                    <img src="img/naya4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/naya1.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/naya2.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/naya3.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/naya4.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
                 <div class="texto-descripcion">
                     <p>
                         Colección de pendientes que re-imagina la colonización colombiana desde un futuro
                         alternativo, donde las culturas indígenas triunfan. Fusiona estética indígena Colombiana y
                         medieval con diseño 3D, simbolizando resistencia, tradición e innovación.
-                        <br><br>
-                        .
-                        <br><br>
+                        <br><br>.<br><br>
                         A collection of earrings reinterpret the Colombian colonization from an alternative
                         future where the Indigenous cultures triumph. Merges indigenous Colombian aesthetics and
                         medieval with 3D design, symbolizing resistance, tradition and innovation.
@@ -546,26 +458,24 @@
                 </div>
             </div>
 
-            <!-- segunda seccion fotos otras -->
             <div class="bloque-medio">
-                <img src="img/naya5.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/naya6.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/naya7.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/naya8.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/naya5.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/naya6.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/naya7.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/naya8.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
             </div>
 
-            <!-- tercera seccion render grande final -->
             <div class="bloque-inferior">
-                <img src="img/naya9.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom" class="img-full">
+                <img src="img/naya9.png" alt="" onclick="abrirFoto(this)" class="img-full img-zoom">
             </div>
+        </div>
+
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-
-    <!-- proyecto 3: dior's embrace -->
+    <!-- DIOR'S EMBRACE -->
     <div id="dior" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -577,10 +487,9 @@
         </div>
 
         <div class="dior-contenido">
-            <!-- sección sup con foto y texto -->
             <div class="dior-sup">
                 <div class="dior-img-principal">
-                    <img src="img/dior1.png"alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/dior1.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
                 <div class="dior-descripcion">
                     <p>
@@ -590,8 +499,7 @@
                         reciclada, y una carta personalizada, reforzando la exclusividad y conexión emocional con el
                         personal de Dior.
                     </p>
-                    <br> . <br>
-                    <br>
+                    <br> . <br><br>
                     <p>
                         Created in collaboration with Dior, it provides an immersive experience that balances luxury and
                         sustainability. The box combines cardboard with recycled textiles, adding color while
@@ -602,26 +510,23 @@
                 </div>
             </div>
 
-            <!-- fotos cuadricula -->
             <div class="dior-galeria">
-                <img src="img/dior2.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/dior3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/dior4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <!-- video  -->
+                <img src="img/dior2.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/dior3.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/dior4.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 <div class="dior-video" onclick="reproducirVideo(this)">
                     <video src="videos/dior5.mp4"></video>
                     <div class="play-icon">▶</div>
                 </div>
             </div>
+        </div>
 
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-
-    <!-- proyecto 4: oj napoli -->
+    <!-- OJ NAPOLI -->
     <div id="napoli" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -633,64 +538,51 @@
         </div>
 
         <div class="napoli-contenido">
-            <!-- seccion sup imagen y etexto-->
             <div class="napoli-sup">
                 <div class="napoli-descripcion">
                     <p>
-                        Colección de bermudas masculinas para Old Jeffrey, que emplea diversas gamas de
-                        colores y
-                        figuras geométricas con un efecto desgastado, creando un equilibrio entre un
-                        estilo moderno y un
+                        Colección de bermudas masculinas para Old Jeffrey, que emplea diversas gamas de colores y
+                        figuras geométricas con un efecto desgastado, creando un equilibrio entre un estilo moderno y un
                         toque vintage, ideal para destacar con originalidad.
-                        <br><p>Destacada en Top 5 de la revista Fuera de Serie</p><br>
+                        <br><br>Destacada en Top 5 de la revista Fuera de Serie<br>
                     </p>
                     <br> . <br><br>
                     <p>
-                        A men's bermuda shorts collection for Old Jeffrey, featuring a diverse color
-                        palette and
-                        geometric patterns with a distressed finish, striking a refined balance between
-                        contemporary
+                        A men's bermuda shorts collection for Old Jeffrey, featuring a diverse color palette and
+                        geometric patterns with a distressed finish, striking a refined balance between contemporary
                         design and vintage appeal, ideal for making a distinctive statement.
-                        <br><p> Featured in the Top 5 of Fuera de Serie magazine</p><br>
+                        <br><br>Featured in the Top 5 of Fuera de Serie magazine<br>
                     </p>
                 </div>
 
-                <!-- imgs al lado del texto -->
                 <div class="napoli-sup-imgs">
-                    <img src="img/oj1.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                    <img src="img/oj2.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/oj1.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/oj2.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
             </div>
 
-            <!-- fotos seccion inferior -->
             <div class="napoli-galeria">
+                <img src="img/oj3.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/oj4.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/oj5.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
 
-                <img src="img/oj3.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/oj4.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/oj5.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-
-
-                <img src="img/oj6.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/oj7.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/oj8.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-
+                <img src="img/oj6.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/oj7.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/oj8.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
 
                 <div class="napoli-galeria-abajo">
-                    <img src="img/oj9.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                    <img src="img/oj10.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/oj9.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                    <img src="img/oj10.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
             </div>
         </div>
+
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
+        </div>
     </div>
 
-
-
-
-
-
-
-
-    <!-- proyecto 5: soleris-->
+    <!-- SOLERIS -->
     <div id="soleris" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -702,52 +594,41 @@
         </div>
 
         <div class="cuadricula-soleris">
-            <!-- bloque usperior con texto e imagen principal -->
             <div class="bloque-sup-soleris">
                 <div class="texto-soleris">
                     <p>
-                        Conexión entre la luz y el universo, simbolizando el equilibrio orbital y el
-                        dinamismo cósmico.
-                        Sus órbitas evocan el movimiento planetario mientras la base rocosa refleja
-                        solidez y
-                        estabilidad, ofreciendo un contraste entre lo etéreo y lo terrenal. Sus
-                        laterales están
-                        diseñados para servir como prácticos sujetalibros, integrando versatilidad y
-                        elegancia en un
-                        solo objeto. Soleris, una obra que transforma cualquier ambiente con su
-                        presencia escultórica y
+                        Conexión entre la luz y el universo, simbolizando el equilibrio orbital y el dinamismo cósmico.
+                        Sus órbitas evocan el movimiento planetario mientras la base rocosa refleja solidez y
+                        estabilidad, ofreciendo un contraste entre lo etéreo y lo terrenal. Sus laterales están
+                        diseñados para servir como prácticos sujetalibros, integrando versatilidad y elegancia en un
+                        solo objeto. Soleris, una obra que transforma cualquier ambiente con su presencia escultórica y
                         simbólica.
                         <br>.<br><br>
-                        Connection between light and the universe, symbolizing orbital balance and
-                        cosmic dynamism.
-                        Their orbits evoke planetary motion while the rocky base reflects solidity and
-                        stability,
-                        offering a contrast between the ethereal and the earthly. Its sides are designed
-                        to serve as
-                        practical bookbinders, integrating versatility and elegance in a single object.
-                        Soleris, a work
+                        Connection between light and the universe, symbolizing orbital balance and cosmic dynamism.
+                        Their orbits evoke planetary motion while the rocky base reflects solidity and stability,
+                        offering a contrast between the ethereal and the earthly. Its sides are designed to serve as
+                        practical bookbinders, integrating versatility and elegance in a single object. Soleris, a work
                         that transforms any environment with its sculptural and symbolic presence.
                     </p>
                 </div>
                 <div class="imagen-grande-soleris">
-                    <img src="img/soleris1.jpg" alt="Soleris Principal" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/soleris1.jpg" alt="Soleris Principal" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
             </div>
 
-            <!-- bloque inferior con3 Imagenes -->
             <div class="soleris-galeria">
-                <img src="img/soleris2.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/soleris3.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/soleris4.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/soleris2.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/soleris3.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/soleris4.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
             </div>
+        </div>
+
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-
-    <!-- proyecto 6: giralia -->
+    <!-- GIRALIA -->
     <div id="giralia" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -759,54 +640,45 @@
         </div>
 
         <div class="cuadricula-giralia">
-
-            <!-- bloque superior con texto e imagen principal -->
             <div class="bloque-sup-giralia">
                 <div class="texto-giralia">
                     <p>
-                        Giralia, un botellero colgante giratorio desarrollado en colaboración con el
-                        Restaurante
-                        Quimbaya by Edwin Rodriguez ubicado en Madrid, España. Diseñado para optimizar
-                        el espacio
-                        superior de la barra de cocktails, que combina funcionalidad y estética para el
-                        almacenamiento
-                        de botellas, demostrando así la capacidad innovadora en el diseño de productos
-                        para la
+                        Giralia, un botellero colgante giratorio desarrollado en colaboración con el Restaurante
+                        Quimbaya by Edwin Rodriguez ubicado en Madrid, España. Diseñado para optimizar el espacio
+                        superior de la barra de cocktails, que combina funcionalidad y estética para el almacenamiento
+                        de botellas, demostrando así la capacidad innovadora en el diseño de productos para la
                         hostelería.
                         <br> . <br><br>
-                        Giralia, a rotating hanging bottle rack developed in collaboration with Quimbaya
-                        Restaurant by
-                        Edwin Rodriguez located in Madrid, Spain. Designed to optimize the upper space
-                        of the cocktail
-                        bar, it combines functionality and aesthetics for bottle storage, thus
-                        showcasing innovative
+                        Giralia, a rotating hanging bottle rack developed in collaboration with Quimbaya Restaurant by
+                        Edwin Rodriguez located in Madrid, Spain. Designed to optimize the upper space of the cocktail
+                        bar, it combines functionality and aesthetics for bottle storage, thus showcasing innovative
                         capability in product design for the hospitality industry.
                     </p>
                 </div>
                 <div class="imagen-grande-giralia">
-                    <img src="img/quimbaya1.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/quimbaya1.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
             </div>
-            <!-- bloque inferior con 3img y 1 video -->
+            
             <div class="giralia-galeria">
-                <img src="img/quimbaya0.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/quimbaya2.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/quimbaya5.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/quimbaya4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/quimbaya3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/quimbaya0.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/quimbaya2.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/quimbaya5.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/quimbaya4.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/quimbaya3.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 <div class="giralia-video" onclick="reproducirVideo(this)">
                     <video src="videos/quimbaya-video.mp4"></video>
                     <div class="play-icon"> ▶ </div>
                 </div>
             </div>
+        </div>
 
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-    <!-- proyecto 7: singular essence -->
+    <!-- SINGULAR ESSENCE -->
     <div id="singular" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -818,62 +690,46 @@
         </div>
 
         <div class="cuadricula-singular">
-
-            <!-- bloque superior con img y text -->
             <div class="bloque-sup-singular">
                 <div class="imagen-grande-singular">
-                    <img src="img/perfume1.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/perfume1.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
                 <div class="texto-singular">
                     <p>
-                        Diseño de envase de perfume unisex, inspirado en la obra "Estudio sexual
-                        indiferenciado" de
-                        Teresa Solar. En el arte contemporáneo, la identidad de género es un tema que
-                        muchos artistas
-                        están abordando, y Solar desafía las etiquetas tradicionales. Este diseño
-                        reflexiona sobre la
-                        diversidad sexual y la no conformidad con las categorías de género en la vida
-                        cotidiana. La obra
-                        de Solar nos recuerda que las personas van más allá de las etiquetas de hombre o
-                        mujer, llamando
+                        Diseño de envase de perfume unisex, inspirado en la obra "Estudio sexual indiferenciado" de
+                        Teresa Solar. En el arte contemporáneo, la identidad de género es un tema que muchos artistas
+                        están abordando, y Solar desafía las etiquetas tradicionales. Este diseño reflexiona sobre la
+                        diversidad sexual y la no conformidad con las categorías de género en la vida cotidiana. La obra
+                        de Solar nos recuerda que las personas van más allá de las etiquetas de hombre o mujer, llamando
                         a la diversidad y desafiando los moldes establecidos.
-                        <br>.<br>
-                        <br>
-                        Perfume packaging design, inspired by Teresa Solar's artwork "Indifferent Sexual
-                        Study". In
-                        contemporary art, gender identity is a theme many artists are exploring, and
-                        Solar challenges
-                        traditional labels. This design reflects on sexual diversity and non-conformity
-                        with gender
-                        categories in everyday life. Solar's work reminds us that people transcend
-                        labels of man or
+                        <br>.<br><br>
+                        Perfume packaging design, inspired by Teresa Solar's artwork "Indifferent Sexual Study". In
+                        contemporary art, gender identity is a theme many artists are exploring, and Solar challenges
+                        traditional labels. This design reflects on sexual diversity and non-conformity with gender
+                        categories in everyday life. Solar's work reminds us that people transcend labels of man or
                         woman, advocating for diversity and challenging established norms.
                     </p>
                 </div>
             </div>
 
-            <!-- bloque inferior con 7imgenes -->
-
             <div class="perfume-galeria">
-                <img src="img/perfume3.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume7.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume8.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume9.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume6.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume5.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume4.jpeg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/perfume2.jpg"alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-
-
+                <img src="img/perfume3.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume7.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume8.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume9.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume6.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume5.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume4.jpeg" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/perfume2.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
             </div>
+        </div>
 
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-    <!-- proyecto 8: zentide -->
+    <!-- ZENTIDE -->
     <div id="zentide" class="seccion">
         <div class="detalle-nav">
             <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
@@ -885,59 +741,43 @@
         </div>
 
         <div class="cuadricula-zentide">
-
-            <!-- seccion superior texto e imagen -->
             <div class="bloque-sup-zentide">
                 <div class="texto-zentide">
                     <p>
-                        Zen tide es más que una apariencia estética: brinda una experiencia sensorial
-                        para disfrutar un
-                        momento de tranquilidad y explorar la salud mental y física. Cada onda
-                        representa cuerpo, mente
-                        y espíritu, invitándote a conectar con tus sentidos, encontrar equilibrio mental
-                        y sumergirte en
-                        una experiencia espiritual. Al descorchar y saborear cada vino, se crea un
-                        espacio para la
+                        Zen tide es más que una apariencia estética: brinda una experiencia sensorial para disfrutar un
+                        momento de tranquilidad y explorar la salud mental y física. Cada onda representa cuerpo, mente
+                        y espíritu, invitándote a conectar con tus sentidos, encontrar equilibrio mental y sumergirte en
+                        una experiencia espiritual. Al descorchar y saborear cada vino, se crea un espacio para la
                         relajación, la contemplación y el crecimiento personal.
                         <br>.<br><br>
-                        Zen tide is more than an aesthetic appearance: it provides a sensory experience
-                        to enjoy a
-                        moment of tranquility and explore mental and physical health. Each wave
-                        represents body, mind
-                        and spirit, inviting you to connect with your senses, find mental balance and
-                        immerse yourself
-                        in a spiritual experience. Uncorking and tasting each wine creates a space for
-                        relaxation,
+                        Zen tide is more than an aesthetic appearance: it provides a sensory experience to enjoy a
+                        moment of tranquility and explore mental and physical health. Each wave represents body, mind
+                        and spirit, inviting you to connect with your senses, find mental balance and immerse yourself
+                        in a spiritual experience. Uncorking and tasting each wine creates a space for relaxation,
                         contemplation and personal growth.
                     </p>
                 </div>
                 <div class="imagen-banner-zentide">
-                    <img src="img/zen1.jpg" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                    <img src="img/zen1.jpg" alt="" onclick="abrirFoto(this)" class="img-zoom">
                 </div>
             </div>
 
-
-            <!-- seccion inferior -->
             <div class="zentide-galeria">
-                <img src="img/zen2.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/zen3.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/zen4.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/zen5.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/zen6.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
-                <img src="img/zen7.png" alt="" onclick="abrirFoto(this.src)" class="img-zoom">
+                <img src="img/zen2.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/zen3.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/zen4.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/zen5.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/zen6.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
+                <img src="img/zen7.png" alt="" onclick="abrirFoto(this)" class="img-zoom">
             </div>
+        </div>
 
+        <div class="detalle-nav">
+            <a href="#" onclick="cerrarProyecto()" class="btn-volver">Volver a proyectos</a>
         </div>
     </div>
 
-
-
-
-
-
-
     <!-- seccion contacto -->
-
     <div id="contacto" class="seccion">
         <form id="contactForm" class="animado">
             <h2 class="titulo-contacto">Contacto</h2>
@@ -963,8 +803,14 @@
         </form>
     </div>
 
+    <!-- VISOR GLOBAL DE IMÁGENES -->
+    <div id="visor" class="visor-imagen" onclick="cerrarFoto(event)">
+        <span class="cerrar-visor">×</span>
+        <span class="prev-visor" onclick="cambiarFoto(-1)">&#10094;</span>
+        <img id="img-visor" src="" alt="Imagen Completa">
+        <span class="next-visor" onclick="cambiarFoto(1)">&#10095;</span>
+    </div>
 
+    <script src="alteak.js"></script>
 </body>
-<script src="alteak.js"></script>
-
 </html>
