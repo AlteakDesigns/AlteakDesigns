@@ -646,24 +646,58 @@
 
 /* 0 proyecto estilos AMMA */
 
-/* Títulos centrados */
+/* -----------------------------------
+   PROYECTO AMMA
+----------------------------------- */
+
+#amma {
+    padding-bottom: 30px;
+}
+
+/* Títulos con el mismo padding y tamaño que el resto */
 .titulo-amma {
     text-align: center;
     margin-bottom: 40px;
+    padding: 0 5%;
 }
 
-/* Forzamos que sea una fila y use align-items: stretch para igualar alturas */
+.titulo-amma h1 {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.titulo-amma .subtitulo {
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: normal;
+}
+
+/* Contenedor general alineado a los demás */
+.amma-contenido {
+    padding: 0 5%;
+}
+
+/* Estilos de texto unificados (color, tamaño, interlineado) */
+.amma-descripcion p,
+.amma-medio-texto p {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Bloque 1 */
 .amma-sup {
     display: flex !important;
     flex-direction: row !important; 
     flex-wrap: nowrap !important;
     gap: 40px;
     margin-bottom: 60px;
-    align-items: stretch !important; /* Clave para el centrado vertical del texto */
+    align-items: stretch !important;
     width: 100%;
 }
 
-/* Aumentamos el ancho al 60% para que sean más grandes */
 .amma-sup-imgs {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important;
@@ -678,34 +712,36 @@
     display: block;
 }
 
-/* Reducimos el ancho al 40% y centramos en ambos ejes */
 .amma-descripcion {
     width: 40% !important;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centrado vertical */
-    align-items: center;     /* Centrado horizontal flex */
-    text-align: center;      /* Centrado del texto */
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px; /* Margen interior extra para que respire */
 }
 
-/* Aplicamos la misma lógica de proporciones y centrado al bloque 2 */
+/* Bloque 2 */
 .amma-medio {
     display: flex;
     gap: 40px;
     margin-bottom: 60px;
     align-items: stretch;
 }
+
 .amma-medio-texto {
     width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    padding: 0 20px;
 }
+
 .amma-medio-img {
     width: 60%;
 }
+
 .amma-medio-img img {
     width: 100%;
     height: 100%;
@@ -713,13 +749,14 @@
     display: block;
 }
 
-/* Bloque 3: Galería 3x2 */
+/* Bloque 3: Galería */
 .amma-galeria-inferior {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 40px;
 }
+
 .amma-galeria-inferior img {
     width: 100%;
     aspect-ratio: 4 / 3;
@@ -727,28 +764,30 @@
     display: block;
 }
 
-/* Bloque 4: Footer h4 gris pequeño y centrado */
+/* Bloque 4: Footer */
 .amma-footer {
     text-align: center;
     margin-bottom: 40px;
 }
+
 .texto-h4-pequeno {
-    color: #888888;
+    color: #888;
     font-size: 0.8rem;
     font-weight: normal;
     margin: 0;
 }
 
-/* Interacción de Zoom */
+/* Interacción de Zoom igualada a 0.3s como en los otros proyectos */
 .img-zoom {
     cursor: pointer;
-    transition: transform 0.2s ease-in-out;
+    transition: transform 0.3s ease;
 }
+
 .img-zoom:hover {
     transform: scale(1.02);
 }
 
-/* Estilos base del visor */
+/* Visor de imágenes */
 .visor-imagen {
     display: none; 
     position: fixed;
@@ -761,11 +800,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .visor-imagen img {
     max-width: 90%;
     max-height: 90%;
     object-fit: contain;
 }
+
 .cerrar-visor {
     position: absolute;
     top: 20px;
@@ -788,7 +829,10 @@
     }
     .amma-descripcion {
         width: 100% !important;
+        padding: 0;
+        order: -1; /* Manda el texto arriba del todo */
     }
+    
     .amma-medio {
         flex-direction: column !important;
         gap: 20px;
@@ -796,10 +840,13 @@
     }
     .amma-medio-texto {
         width: 100%;
+        padding: 0;
+        order: -1; /* Manda el texto arriba de la foto */
     }
     .amma-medio-img {
         width: 100%;
     }
+    
     .amma-galeria-inferior {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -815,7 +862,6 @@
         grid-template-columns: 1fr;
     }
 }
-
 
 
 
